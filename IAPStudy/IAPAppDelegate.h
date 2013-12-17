@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IAPHappyIAPHelper.h"
 
 @interface IAPAppDelegate : UIResponder <UIApplicationDelegate>
 

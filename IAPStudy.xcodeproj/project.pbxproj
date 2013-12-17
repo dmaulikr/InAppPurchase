@@ -22,6 +22,12 @@
 		96043A47180CE12B00737541 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96043A26180CE12A00737541 /* UIKit.framework */; };
 		96043A4F180CE12B00737541 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96043A4D180CE12B00737541 /* InfoPlist.strings */; };
 		96043A51180CE12B00737541 /* IAPStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96043A50180CE12B00737541 /* IAPStudyTests.m */; };
+		96043A5B180CE17300737541 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96043A5A180CE17300737541 /* StoreKit.framework */; };
+		96043A5E180CE21000737541 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96043A5D180CE21000737541 /* IAPHelper.m */; };
+		96043A61180CF15900737541 /* IAPHappyIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96043A60180CF15900737541 /* IAPHappyIAPHelper.m */; };
+		965BAAD41827A32900F84365 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965BAAD31827A32900F84365 /* Security.framework */; };
+		965BAADA1827A69500F84365 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 965BAAD71827A69500F84365 /* NSData+Base64.m */; };
+		965BAADB1827A69500F84365 /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 965BAAD91827A69500F84365 /* VerificationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,16 @@
 		96043A4C180CE12B00737541 /* IAPStudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IAPStudyTests-Info.plist"; sourceTree = "<group>"; };
 		96043A4E180CE12B00737541 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96043A50180CE12B00737541 /* IAPStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPStudyTests.m; sourceTree = "<group>"; };
+		96043A5A180CE17300737541 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		96043A5C180CE21000737541 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		96043A5D180CE21000737541 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		96043A5F180CF15900737541 /* IAPHappyIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHappyIAPHelper.h; sourceTree = "<group>"; };
+		96043A60180CF15900737541 /* IAPHappyIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHappyIAPHelper.m; sourceTree = "<group>"; };
+		965BAAD31827A32900F84365 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		965BAAD61827A69500F84365 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		965BAAD71827A69500F84365 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		965BAAD81827A69500F84365 /* VerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationController.h; sourceTree = "<group>"; };
+		965BAAD91827A69500F84365 /* VerificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965BAAD41827A32900F84365 /* Security.framework in Frameworks */,
+				96043A5B180CE17300737541 /* StoreKit.framework in Frameworks */,
 				96043A25180CE12A00737541 /* CoreGraphics.framework in Frameworks */,
 				96043A27180CE12A00737541 /* UIKit.framework in Frameworks */,
 				96043A23180CE12A00737541 /* Foundation.framework in Frameworks */,
@@ -104,6 +122,8 @@
 		96043A21180CE12A00737541 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				965BAAD31827A32900F84365 /* Security.framework */,
+				96043A5A180CE17300737541 /* StoreKit.framework */,
 				96043A22180CE12A00737541 /* Foundation.framework */,
 				96043A24180CE12A00737541 /* CoreGraphics.framework */,
 				96043A26180CE12A00737541 /* UIKit.framework */,
@@ -115,6 +135,7 @@
 		96043A28180CE12A00737541 /* IAPStudy */ = {
 			isa = PBXGroup;
 			children = (
+				965BAAD51827A69500F84365 /* VerificationController */,
 				96043A31180CE12B00737541 /* IAPAppDelegate.h */,
 				96043A32180CE12B00737541 /* IAPAppDelegate.m */,
 				96043A34180CE12B00737541 /* Main.storyboard */,
@@ -124,6 +145,10 @@
 				96043A3B180CE12B00737541 /* IAPDetailViewController.m */,
 				96043A3D180CE12B00737541 /* Images.xcassets */,
 				96043A29180CE12B00737541 /* Supporting Files */,
+				96043A5C180CE21000737541 /* IAPHelper.h */,
+				96043A5D180CE21000737541 /* IAPHelper.m */,
+				96043A5F180CF15900737541 /* IAPHappyIAPHelper.h */,
+				96043A60180CF15900737541 /* IAPHappyIAPHelper.m */,
 			);
 			path = IAPStudy;
 			sourceTree = "<group>";
@@ -155,6 +180,17 @@
 				96043A4D180CE12B00737541 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		965BAAD51827A69500F84365 /* VerificationController */ = {
+			isa = PBXGroup;
+			children = (
+				965BAAD61827A69500F84365 /* NSData+Base64.h */,
+				965BAAD71827A69500F84365 /* NSData+Base64.m */,
+				965BAAD81827A69500F84365 /* VerificationController.h */,
+				965BAAD91827A69500F84365 /* VerificationController.m */,
+			);
+			path = VerificationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +241,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Jason;
 				TargetAttributes = {
+					96043A1E180CE12A00737541 = {
+						DevelopmentTeam = 48862Q7FRD;
+					};
 					96043A42180CE12B00737541 = {
 						TestTargetID = 96043A1E180CE12A00737541;
 					};
@@ -255,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96043A61180CF15900737541 /* IAPHappyIAPHelper.m in Sources */,
 				96043A3C180CE12B00737541 /* IAPDetailViewController.m in Sources */,
+				965BAADB1827A69500F84365 /* VerificationController.m in Sources */,
 				96043A2F180CE12B00737541 /* main.m in Sources */,
+				965BAADA1827A69500F84365 /* NSData+Base64.m in Sources */,
 				96043A33180CE12B00737541 /* IAPAppDelegate.m in Sources */,
+				96043A5E180CE21000737541 /* IAPHelper.m in Sources */,
 				96043A39180CE12B00737541 /* IAPMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +424,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IAPStudy/IAPStudy-Prefix.pch";
 				INFOPLIST_FILE = "IAPStudy/IAPStudy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,10 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IAPStudy/IAPStudy-Prefix.pch";
 				INFOPLIST_FILE = "IAPStudy/IAPStudy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +512,7 @@
 				96043A56180CE12B00737541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96043A57180CE12B00737541 /* Build configuration list for PBXNativeTarget "IAPStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +521,7 @@
 				96043A59180CE12B00737541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
